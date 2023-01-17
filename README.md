@@ -1,4 +1,4 @@
-# Rosary-GUI
+# Rosary UI
 English/German Pop-Ups for praying the rosary with the 5 mysteries.
 
 Rosenkranz mit Nutzeroberfläche und den 5 Geheimnissen.
