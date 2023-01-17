@@ -1,28 +1,33 @@
-import german as g
-import api
+import code.api as api
+
+if api.draw("Activate german language? If so, type d").lower() == "d":
+    import language.german as l
+else:
+    import language.english as l
 
 mysteries = [1, 2, 3, 4]
-mystery = api.askNum("Welches Geheimnis?\n1 = freudenreichen, 2 = lichtreichen, 3 = schmerzhaften, 4 = glorreichen")
+mystery = api.askNum(l.which_mystery())
 
 if mystery not in mysteries:
-    api.draw("Gehemnis gibt es nicht, wechsel zu freudenreichen (1)")
+    api.draw(l.invalid_mystery())
     mystery = 1
-def o(text):
+def o(text): # For easier to read code below
     api.draw(text)
-o("Von nun an nur noch Enter drücken.")
     
-o(g.crucifix())
-o(g.i_believe())
-o(g.glory_be())
-o(g.our_father())
+o(l.only_press_enter())
+    
+o(l.crucifix())
+o(l.i_believe())
+o(l.glory_be())
+o(l.our_father())
 
-o(g.ave_maria(g.ave_maria_start(1)))
-o(g.ave_maria(g.ave_maria_start(2)))
-o(g.ave_maria(g.ave_maria_start(3)))
+o(l.ave_maria(l.ave_maria_start(1)))
+o(l.ave_maria(l.ave_maria_start(2)))
+o(l.ave_maria(l.ave_maria_start(3)))
 
 for i in range(1,6):
-    o(g.glory_be())
-    o(g.our_father())
-    o(g.ave_maria(g.get_mysteries(mystery, i), "10x\n"))
+    o(l.glory_be())
+    o(l.our_father())
+    o(l.ave_maria(l.get_mysteries(mystery, i), "10x\n"))
 
-o(g.glory_be())
+o(l.glory_be())
