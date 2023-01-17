@@ -1,4 +1,4 @@
-import code.api as api
+import python_stuff.api as api
 
 if api.draw("Activate german language? If so, type d").lower() == "d":
     import language.german as l
