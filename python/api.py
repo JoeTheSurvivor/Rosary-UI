@@ -7,8 +7,6 @@ title = " "
 ROOT = tk.Tk()
 ROOT.withdraw()
 
-# Ask lang
-
 def askNum(text:str)->int:
     USER_INP = simpledialog.askinteger(title=title, prompt=text)
     if USER_INP == None:

@@ -5,7 +5,7 @@ def invalid_mystery()->str:
     return "Unkown number, selecting joyful (1)"
 
 def only_press_enter()->str:
-    return "From now on only press enter.\nNote: There are other versions of the rosary. This is not \"THE\" version."
+    return "From now on only press enter. Type b to go back.\nNote: There are other versions of the rosary. This is not \"THE\" version."
 
 # See https://www.cs.cmu.edu/~spok/catholic/rosary.html
 def joyful_mystery(num)->str:
@@ -64,3 +64,6 @@ def ave_maria_start(num)->str:
 
 def ave_maria(secret:str, amount:str = "")->str:
     return f"{amount}Haily Mary, full of grace, the Lord is with thee.\nBlessed art thou among women, and blessed is the fruit of thy womb,\nJesus, {secret}.\nHoly Mary, Mother of God, pray for us sinners,\nnow and at the hour of our death.\nAmen."
+
+def cant_go_back()->str:
+    return "(You're already at the start)"

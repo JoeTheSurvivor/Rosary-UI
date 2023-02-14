@@ -5,7 +5,7 @@ def invalid_mystery()->str:
     return "Geheimnis gibt es nicht, wechsel zu freudenreichen (1)"
 
 def only_press_enter()->str:
-    return "Von nun an nur noch Enter drücken.\nEs kann andere Versionen des Rosenkranz geben."
+    return "Von nun an nur noch Enter drücken. Schreibe z um zurückzuspringen.\nEs kann andere Versionen des Rosenkranz geben."
 
 def joyful_mystery(num)->str:
     secrets = ["den du, o Jungfrau, vom Heiligen Geist empfangen hast",
@@ -62,3 +62,6 @@ def ave_maria_start(num)->str:
 
 def ave_maria(secret:str, amount:str = "")->str:
     return f"{amount}Gegrüßet seist du, Maria, voll der Gnade, der Herr ist mit dir. Du bist\ngebenedeit unter den Frauen, und gebenedeit ist die Frucht deines Leibes,\nJesus, {secret}.\nHeilige Maria, Mutter Gottes, bitte für uns Sünder jetzt und in der Stunde\nunseres Todes.\nAmen."
+
+def cant_go_back()->str:
+    return "(Bereits am Anfang)"
