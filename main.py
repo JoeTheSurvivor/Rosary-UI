@@ -16,7 +16,7 @@ def o(text)->str: # For easier to read code below
 
 o(l.only_press_enter())
 
-instructions = [l.crucifix(), l.i_believe(), l.glory_be(), l.our_father(), l.ave_maria(l.ave_maria_start(1)), l.ave_maria(l.ave_maria_start(1)), l.ave_maria(l.ave_maria_start(3))]
+instructions = [l.crucifix(), l.i_believe(), l.glory_be(), l.our_father(), l.ave_maria(l.ave_maria_start(1)), l.ave_maria(l.ave_maria_start(2)), l.ave_maria(l.ave_maria_start(3))]
 
 for i in range(1,6):
     instructions.append(l.glory_be())
