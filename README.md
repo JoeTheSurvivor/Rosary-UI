@@ -1,4 +1,4 @@
-## Download .exe [here](https://github.com/JoeTheSurvivor/Rosary-UI/releases/tag/release).
+## Download .exe [here](https://github.com/JoeTheSurvivor/Rosary-UI/releases).
 
 # Rosary UI
 
