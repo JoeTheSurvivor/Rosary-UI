@@ -12,3 +12,5 @@ Type b to go back a step / Schreibe z um ein Schritt zurückzugehen
 
 Build command for people downloading the source code (execute from main directory):
 pyinstaller main.py --onefile --noconsole --icon=rosary.ico --name='Rosary UI'
+
+Recommended rosaries per individual day follow Pope John Paul II's 2002 proposal
