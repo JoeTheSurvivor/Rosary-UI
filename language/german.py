@@ -1,3 +1,4 @@
+# Good example: https://www.adorare.ch/rosenkranz.html
 def which_mystery()->str:
     return "Welches Geheimnis?\n1 = freudenreichen, 2 = lichtreichen, 3 = schmerzhaften, 4 = glorreichen"
 def recommended()->str:
@@ -59,11 +60,12 @@ def get_mysteries(mystery, secret):
         for i in range(1,5):
             full_mystery_text = full_mystery_text + "Jesus, " + mysteries[mystery - 1](i) + "\n"
         return full_mystery_text
-
+def fatima_prayer()->str:
+    return "O mein Jesus, verzeih uns unsere Sünden, bewahre uns vor dem Feuer der Hölle,\nführe alle Seelen in den Himmel, besonders jene, die deiner Barmherzigkeit am meisten bedürfen.\nAmen."
 def crucifix()->str:
     return "Im Namen des Vaters und des Sohnes und des Heiligen Geistes.\nAmen."
 
-def i_believe()->str:
+def apostles_creed()->str:
     return "Ich glaube an Gott, den Vater, den Allmächtigen, den Schöpfer des Himmels\nund der Erde, und an Jesus Christus, seinen eingeborenen Sohn, unsern\nHerrn, empfangen durch den Heiligen Geist, geboren von der Jungfrau\nMaria, gelitten unter Pontius Pilatus, gekreuzigt gestorben und begraben,\nhinabgestiegen in das Reich des Todes, am dritten Tage auferstanden von\nden Toten, aufgefahren in den Himmel; er sitzt zur Rechten Gottes, des\nallmächtigen Vaters; von dort wird er kommen, zu richten die Lebenden und\ndie Toten. Ich glaube an den Heiligen Geist, die heilige katholische Kirche,\nGemeinschaft der Heiligen, Vergebung der Sünden, Auferstehung der Toten\nund das ewige Leben.\nAmen."
 
 def glory_be()->str:

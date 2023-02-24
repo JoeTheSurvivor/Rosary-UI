@@ -49,7 +49,6 @@ def glorious_mystery(num)->str:
                "who raised you, Blessed Virgin, up into Heaven",
                "who crowned you, Blessed Virgin, in Heaven"]
     return secrets[num - 1]
-
 def get_mysteries(mystery, secret):
     mysteries = [joyful_mystery, luminous_mystery, sorrowful_mystery, glorious_mystery]
     if not secret == 0:
@@ -59,10 +58,12 @@ def get_mysteries(mystery, secret):
         for i in range(1,5):
             full_mystery_text = full_mystery_text + "Jesus, " + mysteries[mystery - 1](i) + "\n"
         return full_mystery_text
+def fatima_prayer()->str:
+    return "O my Jesus, forgive us our sins, save us from the fires of hell.\nLead all souls to heaven, especially those in most need of thy mercy.\nAmen."
 def crucifix()->str:
     return "In the name of the Father, and of the Son, and of the Holy Spirit.\nAmen."
 
-def i_believe()->str:
+def apostles_creed()->str:
     return "I believe in God, the Father almighty, Creator of Heaven and earth.\nAnd in Jesus Christ, His only Son, our Lord,\nWho was conceived by the Holy Spirit, born of the\nVirgin Mary, suffered under Pontius Pilate;\nwas crucified, died, and was buried.\nHe descended into Hell. The third day He rose again from the dead.\nHe ascended into Heaven, and sits at the right hand of God, the Father almighty.\nHe shall come again to judge the living and the dead.\nI believe in the Holy Spirit, the holy Catholic Church,\nthe communion of saints, the forgiveness of sins,\nthe resurrection of the body, and life everlasting.\nAmen."
 
 def glory_be()->str:
