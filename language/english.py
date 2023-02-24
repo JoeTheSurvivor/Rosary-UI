@@ -1,8 +1,18 @@
 def which_mystery()->str:
     return "Which secret?\n1 = joyful, 2 = luminous, 3 = sorrowful, 4 = glorious"
-
+def recommended()->str:
+    try:
+        from datetime import datetime as dt
+        days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+        mysteries = ["joyful", "sorrowful", "glorious", "luminous", "sorrowful", "joyful", "glorious"]
+        weekday = dt.weekday(dt.now())
+        return "For " + days[weekday] + ", the " + mysteries[weekday] + " rosary is recommended."
+    except Exception:
+        return ""
+def mystery_contains()->str:
+    return "Secret contains following verses:"
 def invalid_mystery()->str:
-    return "Unkown number, selecting joyful (1)"
+    return "Unknown number, please select between 1 2 3 and 4"
 
 def only_press_enter()->str:
     return "From now on only press enter. Type b to go back.\nNote: There are other versions of the rosary. This is not \"THE\" version."
@@ -42,8 +52,13 @@ def glorious_mystery(num)->str:
 
 def get_mysteries(mystery, secret):
     mysteries = [joyful_mystery, luminous_mystery, sorrowful_mystery, glorious_mystery]
-    return mysteries[mystery - 1](secret)
-
+    if not secret == 0:
+        return mysteries[mystery - 1](secret)
+    else:
+        full_mystery_text = ""
+        for i in range(1,5):
+            full_mystery_text = full_mystery_text + "Jesus, " + mysteries[mystery - 1](i) + "\n"
+        return full_mystery_text
 def crucifix()->str:
     return "In the name of the Father, and of the Son, and of the Holy Spirit.\nAmen."
 

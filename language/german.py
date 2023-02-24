@@ -1,8 +1,19 @@
 def which_mystery()->str:
     return "Welches Geheimnis?\n1 = freudenreichen, 2 = lichtreichen, 3 = schmerzhaften, 4 = glorreichen"
+def recommended()->str:
+    try:
+        from datetime import datetime as dt
+        days = ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"]
+        mysteries = ["freundenreiche", "schmerzhafte", "glorreiche", "lichtreiche", "schmerzhafte", "freudenreiche", "glorreiche"]
+        weekday = dt.weekday(dt.now())
+        return "Für " + days[weekday] + " ist der " + mysteries[weekday] + " Rosenkranz empfohlen."
+    except Exception:
+        return ""
+def mystery_contains()->str:
+    return "Geheimnis enthält folgende Versen:"
 
 def invalid_mystery()->str:
-    return "Geheimnis gibt es nicht, wechsel zu freudenreichen (1)"
+    return "Geheimnis gibt es nicht, bitte auswählen zwischen 1 2 3 und 4"
 
 def only_press_enter()->str:
     return "Von nun an nur noch Enter drücken. Schreibe z um zurückzuspringen.\nEs kann andere Versionen des Rosenkranz geben."
@@ -41,7 +52,13 @@ def glorious_mystery(num)->str:
 
 def get_mysteries(mystery, secret):
     mysteries = [joyful_mystery, luminous_mystery, sorrowful_mystery, glorious_mystery]
-    return mysteries[mystery - 1](secret)
+    if not secret == 0:
+        return mysteries[mystery - 1](secret)
+    else:
+        full_mystery_text = ""
+        for i in range(1,5):
+            full_mystery_text = full_mystery_text + "Jesus, " + mysteries[mystery - 1](i) + "\n"
+        return full_mystery_text
 
 def crucifix()->str:
     return "Im Namen des Vaters und des Sohnes und des Heiligen Geistes.\nAmen."

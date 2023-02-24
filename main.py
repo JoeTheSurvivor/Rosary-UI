@@ -6,15 +6,15 @@ else:
     import language.english as l
 
 mysteries = [1, 2, 3, 4]
-mystery = api.askNum(l.which_mystery())
+mystery = api.askNum(l.which_mystery() + "\n\n" + l.recommended())
 
-if mystery not in mysteries:
+while mystery not in mysteries:
     api.draw(l.invalid_mystery())
-    mystery = 1
+    mystery = api.askNum(l.which_mystery() + "\n\n" + l.recommended())
 def o(text)->str: # For easier to read code below
     return api.draw(text)
 
-o(l.only_press_enter())
+o(l.only_press_enter() + "\n\n" + l.mystery_contains() + "\n" + l.get_mysteries(mystery, 0))
 
 instructions = [l.crucifix(), l.i_believe(), l.glory_be(), l.our_father(), l.ave_maria(l.ave_maria_start(1)), l.ave_maria(l.ave_maria_start(2)), l.ave_maria(l.ave_maria_start(3))]
 
