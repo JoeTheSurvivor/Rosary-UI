@@ -55,7 +55,7 @@ def get_mysteries(mystery, secret):
         return mysteries[mystery - 1](secret)
     else:
         full_mystery_text = ""
-        for i in range(1,5):
+        for i in range(1,6):
             full_mystery_text = full_mystery_text + "Jesus, " + mysteries[mystery - 1](i) + "\n"
         return full_mystery_text
 def fatima_prayer()->str:
