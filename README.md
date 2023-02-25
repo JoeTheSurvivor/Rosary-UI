@@ -14,3 +14,5 @@ Build command for people downloading the source code (execute from main director
 pyinstaller main.py --onefile --noconsole --icon=rosary.ico --name='Rosary UI'
 
 Recommended rosaries per individual day follow Pope John Paul II's 2002 proposal
+
+Example prayer for english is the rosary.pdf, however the structure is after the german version I found at https://www.adorare.ch/rosenkranz.html (differences are no fatima prayer at the start and no conclusion part)
