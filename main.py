@@ -14,7 +14,7 @@ while mystery not in mysteries:
 def o(text, title = " ")->str: # For easier to read code below
     return api.draw(text, title)
 
-o(l.only_press_enter() + "\n\n" + l.mystery_contains() + "\n" + l.get_mysteries(mystery, 0), "Version 1.3.1")
+o(l.only_press_enter() + "\n\n" + l.mystery_contains() + "\n" + l.get_mysteries(mystery, 0), "Version 1.4")
 
 instructions = [l.crucifix(), l.apostles_creed(), l.our_father(), l.ave_maria(l.ave_maria_start(1)), l.ave_maria(l.ave_maria_start(2)), l.ave_maria(l.ave_maria_start(3)), l.glory_be()]
 
