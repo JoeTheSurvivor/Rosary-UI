@@ -83,3 +83,6 @@ def ave_maria(secret:str, amount:str = "")->str:
 
 def cant_go_back()->str:
     return "(You're already at the start)"
+
+def holy_queen()->str:
+    return "Haily Holy Queen, mother of mercy;\nour life, our sweetness, and our hope.\nTo thee do we cry, poor banished children of Eve.\nTo thee do we send up our sighs, mourning and weeping in this vale of tears.\nTurn, then, most gracious advocate, thine eyes of mercy toward us.\nAnd after this, our exile, show unto us the blessed fruit of thy womb, Jesus.\nO clement, O loving, O sweet Virgin Mary.\n\nPray for us, O holy Mother of God, that we may be made worthy of the promises of Christ.\n\nO God, whose only-begotten Son by His life, death and resurrection,\nhas purchased for us the rewards of eternal life;\ngrant, we beseech Thee, that by meditating upon these mysteries of the Most Holy Rosary of the Blessed Virgin Mary,\nwe may imitate what they contain and obtain what they promise, through the same Christ our Lord.\nAmen."

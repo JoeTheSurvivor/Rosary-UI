@@ -1,4 +1,4 @@
-# Good example: https://www.adorare.ch/rosenkranz.html
+# Good examples: https://www.adorare.ch/rosenkranz.html and https://www.gebet-krieger.de/der-heiligste-rosenkranz
 def which_mystery()->str:
     return "Welches Geheimnis?\n1 = freudenreichen, 2 = lichtreichen, 3 = schmerzhaften, 4 = glorreichen"
 def recommended()->str:
@@ -84,3 +84,6 @@ def ave_maria(secret:str, amount:str = "")->str:
 
 def cant_go_back()->str:
     return "(Bereits am Anfang)"
+
+def holy_queen()->str:
+    return "Sei gegrüßt, oh Königin, Mutter der Barmherzigkeit,\nunser Leben, unsere Süßigkeit, unsere Hoffnung.\nZu dir rufen wir verbannte Kinder Evas;\nzu dir seufzen wir trauernd und weinend in diesem Tal der Tränen.\nWohlan denn, unsere Fürsprecherin, wende deine barmherzigen Augen uns zu,\nund nach diesem Elend zeige uns Jesus, die gebenedeite Frucht deines Leibes.\nOh gütige, oh milde, oh süße Jungfrau Maria!\n\nBitte für uns, oh heilige Gottesgebärerin.\nAuf daß wir würdig werden der Verheißungen Christi.\n\nOh Gott, dessen eingeborener Sohn durch Sein Leben,\nSeinen Tod und Seine Auferstehung uns die Belohnung des ewigen Lebens verdient hat,\nverleihe uns, wir bitten Dich, daß wir, indem wir die Geheimisse des heiligen Rosenkranzes der allerseligsten Jungfrau ehren,\nwas sie enthalten nachahmen und dadurch erlangen, was uns in denselben verheißen ist. Durch unsern Herrn Jesus Christus.\nAmen."

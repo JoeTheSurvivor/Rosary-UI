@@ -22,6 +22,7 @@ for i in range(1,6):
     instructions.append(l.our_father())
     instructions.append(l.ave_maria(l.get_mysteries(mystery, i), "10x\n"))
     instructions.append(l.glory_be() + "\n\n" + l.fatima_prayer())
+instructions.append(l.holy_queen())
 
 x = 0
 while x < len(instructions):
