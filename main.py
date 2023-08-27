@@ -16,7 +16,7 @@ def main():
         mystery = api.askNum(l.which_mystery() + "\n\n" + l.recommended())
         if mystery == 5:
             o(l.michael_prayer())
-        else:
+        if mystery not in mysteries:
             o(l.invalid_mystery())
     
     o(l.only_press_enter() + "\n\n" + l.mystery_contains() + "\n" + l.get_mysteries(mystery, 0), "Version 1.5")
