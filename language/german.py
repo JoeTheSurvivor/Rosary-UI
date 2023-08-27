@@ -67,7 +67,7 @@ def crucifix()->str:
     return "Im Namen des Vaters und des Sohnes und des Heiligen Geistes.\nAmen."
 
 def apostles_creed()->str:
-    return "Ich glaube an Gott, den Vater, den Allmächtigen, den Schöpfer des Himmels\nund der Erde, und an Jesus Christus, seinen eingeborenen Sohn, unsern\nHerrn, empfangen durch den Heiligen Geist, geboren von der Jungfrau\nMaria, gelitten unter Pontius Pilatus, gekreuzigt gestorben und begraben,\nhinabgestiegen in das Reich des Todes, am dritten Tage auferstanden von\nden Toten, aufgefahren in den Himmel; er sitzt zur Rechten Gottes, des\nallmächtigen Vaters; von dort wird er kommen, zu richten die Lebenden und\ndie Toten. Ich glaube an den Heiligen Geist, die heilige katholische Kirche,\nGemeinschaft der Heiligen, Vergebung der Sünden, Auferstehung der Toten\nund das ewige Leben.\nAmen."
+    return "Ich glaube an Gott, den Vater, den Allmächtigen,\nden Schöpfer des Himmels und der Erde,\nund an Jesus Christus, seinen eingeborenen Sohn, unsern Herrn,\nempfangen durch den Heiligen Geist, geboren von der Jungfrau Maria, \ngelitten unter Pontius Pilatus, gekreuzigt gestorben und begraben,\nhinabgestiegen in das Reich des Todes, am dritten Tage auferstanden von den Toten,\naufgefahren in den Himmel; er sitzt zur Rechten Gottes, des allmächtigen Vaters;\nvon dort wird er kommen, zu richten die Lebenden und die Toten.\nIch glaube an den Heiligen Geist, die heilige katholische Kirche,\nGemeinschaft der Heiligen, Vergebung der Sünden,\nAuferstehung der Toten und das ewige Leben.\nAmen."
 
 def glory_be()->str:
     return "Ehre sei dem Vater und dem Sohn und dem Heiligen Geist, wie im Anfang, so auch jetzt und alle Zeit und in Ewigkeit.\nAmen."
