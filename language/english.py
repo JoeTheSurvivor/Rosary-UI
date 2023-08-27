@@ -19,7 +19,6 @@ def invalid_mystery()->str:
 def only_press_enter()->str:
     return "From now on only press enter. Type b to go back.\nNote: There are other versions of the rosary. This is not \"THE\" version."
 
-# See https://www.cs.cmu.edu/~spok/catholic/rosary.html
 def joyful_mystery(num)->str:
     secrets = ["whom you conceived by the power of the Holy Spirit",
                "whom you carried in your womb, visiting St. Elizabeth",

@@ -8,6 +8,8 @@ Type b to go back a step.
 
 Includes optional Saint Michael prayer instead of rosary.
 
+Text from https://www.cs.cmu.edu/~spok/catholic/rosary.html
+
 ### Deutsch
 
 Deutscher Rosenkranz mit Nutzeroberfläche und den 4 Geheimnissen plus Fatima Gebeten.
@@ -16,7 +18,7 @@ Schreibe z um ein Schritt zurückzugehen.
 
 Beinhaltet Erzengel Michael Gebet alternativ zum Rosenkranz.
 
-
+Text von https://www.adorare.ch/rosenkranz.html
 
 ### Additional info
 

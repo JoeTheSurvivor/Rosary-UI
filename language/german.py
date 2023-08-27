@@ -1,4 +1,3 @@
-# Good examples: https://www.adorare.ch/rosenkranz.html
 def which_mystery()->str:
     return "Welches Geheimnis?\n1 = freudenreichen, 2 = lichtreichen, 3 = schmerzhaften, 4 = glorreichen\n5 = Erzengel Michael Gebet"
 def michael_prayer()->str:
