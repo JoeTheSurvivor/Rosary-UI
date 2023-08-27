@@ -1,5 +1,7 @@
 def which_mystery()->str:
-    return "Which secret?\n1 = joyful, 2 = luminous, 3 = sorrowful, 4 = glorious"
+    return "Which secret?\n1 = joyful, 2 = luminous, 3 = sorrowful, 4 = glorious\n5 = Saint Michael Prayer"
+def michael_prayer()->str:
+    return "Saint Michael Archangel, defend us in battle,\nbe our protection against the wickedness and snares of the devil;\nmay God rebuke him, we humbly pray;\nand do thou, O Prince of the heavenly host,\nby the power of God, cast into hell Satan and all the evil spirits\nwho wander through the world seeking the ruin of souls.\nAmen."
 def recommended()->str:
     try:
         from datetime import datetime as dt

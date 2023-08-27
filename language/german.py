@@ -1,6 +1,8 @@
 # Good examples: https://www.adorare.ch/rosenkranz.html and https://www.gebet-krieger.de/der-heiligste-rosenkranz
 def which_mystery()->str:
-    return "Welches Geheimnis?\n1 = freudenreichen, 2 = lichtreichen, 3 = schmerzhaften, 4 = glorreichen"
+    return "Welches Geheimnis?\n1 = freudenreichen, 2 = lichtreichen, 3 = schmerzhaften, 4 = glorreichen\n5 = Erzengel Michael Gebet"
+def michael_prayer()->str:
+    return "Heiliger Erzengel Michael,\nverteidige uns im Kampfe gegen die Bosheit und die Nachstellungen des Teufels. Sei Du unser Schutz!\nGott gebiete ihm, so bitten wir flehentlich. Du aber, Fürst der himmlischen Heerscharen,\nstürze den Satan und die anderen bösen Geister, die zum Verderben der Seelen die Welt durchziehen,\ndurch die Kraft Gottes in die Hölle.\nAmen."
 def recommended()->str:
     try:
         from datetime import datetime as dt
